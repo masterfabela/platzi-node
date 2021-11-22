@@ -12,14 +12,12 @@ function adios(nombre, callback) {
   }, 500);
 }
 
-/*
 console.log('Iniciando proceso');
 hola('Jose', () => {
   adios('Jose', () => {
     console.log('Terminando proceso');
   });
 });
-*/
 
 hola('Carlos', () => {});
 adios('Carlos', () => {});
