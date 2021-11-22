@@ -1,1 +1,4 @@
+Herramientas:
 
+- nodemon
+- pm2
