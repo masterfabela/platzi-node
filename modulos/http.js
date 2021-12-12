@@ -9,11 +9,16 @@ function router(req, res) {
   console.log(req.url);
   switch (req.url) {
     case '/hola':
-      res.write('Hola, que tal');
+      let saludo = hola();
+      res.write(saludo);
       res.end();
       break;
     default:
       res.write('Error 404: no se lo que quieres');
       res.end();
   }
+}
+
+function hola() {
+  return 'Hola que tal';
 }
