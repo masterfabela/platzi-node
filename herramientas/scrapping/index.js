@@ -4,9 +4,7 @@ const Puppeteer = require('puppeteer');
   // Nuestro codigo
   console.log('Lanzamos navegador');
   //const browser = await Puppeteer.launch();
-  const browser = await Puppeteer.launch({
-    headless: false,
-  });
+  const browser = await Puppeteer.launch();
   const page = await browser.newPage();
   await page.goto('https://es.wikipedia.org/wiki/Node.js');
 
